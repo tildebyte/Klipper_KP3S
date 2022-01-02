@@ -10,6 +10,8 @@
   The3D touch sensor pin is connected to the Z+ connector on the main board. In this config Homing
   is done with the z -endstop and the 3d-touch sensor is used only for probing.
 
+* Tested on a KP3S 3.0 with GD32F303 MCU. Probably works without changes an STM32F103 as well.
+
 # Firmware build
 
 ```bash
