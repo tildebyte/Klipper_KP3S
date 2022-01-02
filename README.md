@@ -1,10 +1,15 @@
-# Klipper KingRoon Printers
-![alt text](https://github.com/nehilo/Klipper-KingRoon-Printers/blob/main/pic/banner.png?raw=true)
+# Klipper KP3S 3.0
+![alt text](https://github.com/9R/klipper_KP3S/blob/main/klipper%20kp3s.png?raw=true)
 
 # HOST Recommendation
 
-Minimal system recommendation :
-[Makerbase MKS PI](https://aliexpress.ru/item/1005004458622987.html?pdp_npi=2%40dis%21RUB%212%C2%A0560%2C96%20%D1%80%D1%83%D0%B1.%212%C2%A0356%2C03%20%D1%80%D1%83%D0%B1.%21%21%21%21%21%4021135c3f16582934765198182ea945%2112000029242151027%21sh&sku_id=12000029242151027&spm=a2g0o.store_pc_allProduct.8148356.35.491e673e0whoZK)
+##Changes from upstream
+
+* Fork of nehilo's klipper config with adjustments for Titan extruder
+
+* The config is set up for connecting a 3d Touch sensor additionally to the default z endstop.
+  The3D touch sensor pin is connected to the Z+ connector on the main board. In this config Homing
+  is done with the z -endstop and the 3d-touch sensor is used only for probing.
 
 # Firmware build
 
@@ -15,7 +20,7 @@ cd ~/klipper
 make menuconfig
 ```
 
-***STM32F103***
+![alt text](https://github.com/9R/klipper_KP3S/blob/main/make.png?raw=true)
 
 ![alt text](https://github.com/nehilo/Klipper-KingRoon-Printers/blob/main/pic/stm32.png?raw=true)
 
