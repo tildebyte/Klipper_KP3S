@@ -1,5 +1,5 @@
 # Klipper KP3S 3.0
-![alt text](https://github.com/9R/klipper_KP3S/blob/main/klipper%20kp3s.png?raw=true)
+![alt text](https://github.com/9R/klipper_KP3S/blob/main/klipper%20kp3s_30.png?raw=true)
 
 
 ##Changes from upstream
