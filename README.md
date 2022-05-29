@@ -25,6 +25,8 @@ this [repo](https://github.com/9R/kp3sExpander).
 
 # Firmware build
 
+Follow the default klipper build instructions
+
 ```bash
 cd ~/klipper
 ```
@@ -32,25 +34,31 @@ cd ~/klipper
 make menuconfig
 ```
 
-![alt text](https://github.com/9R/klipper_KP3S/blob/main/make.png?raw=true)
+![alt text](https://raw.githubusercontent.com/9R/Klipper_KP3S/main/make.png)
 
 ```bash
 make 
 ```
+Make sure to run the following script to add some magic bytes so the firmware can be flashed.
 
 ```bash
 ./scripts/update_mks_robin.py out/klipper.bin out/Robin_nano.bin
 ```
 
+Copy the resulting file to the SDcard, insert it into the KP3S and switch it on.
+After a successful firmware update the file on the SDcard will be renamed to ROBIN_NANO.CUR.
+
 # Config Files Folder
 
 ```bash
-printer.cfg
- -stepper.cfg
- -bltouch.cfg
- -uart.cfg
- -extruder.cfg
  -bed.cfg
+ -bltouch.cfg
+ -display.cfg
+ -extruder.cfg
  -fan.cfg
  -macros.cfg
+ -printer.cfg
+ -stepper.cfg
+ -thermistor.cfg
+ -tmc.cfg
 ```
