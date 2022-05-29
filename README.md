@@ -21,7 +21,7 @@
 # Additional GPIOs
 
 The KP3S' touch screen is of no use when running Klipper firmware. The PCB holding the display 
-can be replaced a custom PCB to expose additional GPIOs (including I2C) so more sensors, steppers 
+can be replaced a custom PCB to expose additional GPIOs (including SPI) so more sensors, steppers 
 or a Klipper-compatible display and rotary encoder can be attached. Design for a PCB exposing all 
 available extra pins in the aperture of the housing where the touch screen resides can be found in 
 this [repo](https://github.com/9R/kp3sExpander).
