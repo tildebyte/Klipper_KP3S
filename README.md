@@ -14,7 +14,9 @@
 * This config uses an dropin replacement for the LCD-PCB to drive a ssd1306 display with klipper. 
   See [additional GPIOs](#additional-gpios) for details.
 
-* Tested on a KP3S 3.0 with GD32F303 MCU. Probably works without changes an STM32F103 as well.
+* Tested on a KP3S 3.0 with GD32F303 MCU. If your motion controller has an original STM32F103 you probably
+  have to untick "Disable SWD at startup" when building the firmware.
+
 
 # Additional GPIOs
 
