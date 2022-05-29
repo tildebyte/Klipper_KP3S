@@ -26,6 +26,8 @@ this [repo](https://github.com/9R/kp3sExpander).
 
 # Firmware build
 
+Follow the default klipper build instructions
+
 ```bash
 cd ~/klipper
 ```
@@ -33,7 +35,7 @@ cd ~/klipper
 make menuconfig
 ```
 
-![alt text](https://github.com/9R/klipper_KP3S/blob/main/make.png?raw=true)
+![alt text](https://raw.githubusercontent.com/9R/Klipper_KP3S/main/make.png)
 
 ![alt text](https://github.com/nehilo/Klipper-KingRoon-Printers/blob/main/pic/stm32.png?raw=true)
 
@@ -44,63 +46,27 @@ make menuconfig
 ```bash
 make 
 ```
+Make sure to run the following script to add some magic bytes so the firmware can be flashed.
 
 ```bash
 ./scripts/update_mks_robin.py out/klipper.bin out/Robin_nano.bin
 ```
 
-If you don`t want to use LCD and turn off cable from motherboard:
+Copy the resulting file to the SDcard, insert it into the KP3S and switch it on.
+After a successful firmware update the file on the SDcard will be renamed to ROBIN_NANO.CUR.
+
+# Config Files Folder
 
 
 ```bash
-./scripts/update_mks_robin.py out/klipper.bin out/Robin_nano43.bin
-```
-
-# TMC UART Pin KingRoon Motherboard ( FOR ADVANCED USERS )
-
-Manual:
-
-KP3S 1.2 Motherboard
-https://www.youtube.com/watch?v=BF19ZXk5KRw
-
-KP3S 1.3 Motherboard
-https://youtu.be/2X_U2wZV_pw
-
-
-Pins:
-```bash
-X:PA5　Y:PC13　Z:PC7　E:PA10  E1:PA9
-```
-
-Thanks for Video to [こんゆたか](https://www.youtube.com/@user-wk7lu7ph4e)
-
-
-# Basic Files Folder Configuration
-
-```bash
- -printer.cfg
- -stepper.cfg
- -extruder.cfg
  -bed.cfg
- -fan.cfg
- -thermistor.cfg
- -macros
-    macros.cfg
-    printing.cfg
-```
-
-# Advanced Files Folder Configuration
-
-```bash
- -printer.cfg
- -stepper.cfg
  -bltouch.cfg
- -tmc.cfg
+ -display.cfg
  -extruder.cfg
- -bed.cfg
  -fan.cfg
+ -macros.cfg
+ -printer.cfg
+ -stepper.cfg
  -thermistor.cfg
- -macros
-    macros.cfg
-    printing.cfg
+ -tmc.cfg
 ```
